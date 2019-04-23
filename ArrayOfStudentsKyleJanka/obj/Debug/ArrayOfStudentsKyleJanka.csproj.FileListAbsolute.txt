@@ -1,0 +1,10 @@
+C:\Users\Kyle Janka\source\repos\ArrayOfStudentsKyleJanka\bin\Debug\ArrayOfStudentsKyleJanka.exe.config
+C:\Users\Kyle Janka\source\repos\ArrayOfStudentsKyleJanka\bin\Debug\ArrayOfStudentsKyleJanka.exe
+C:\Users\Kyle Janka\source\repos\ArrayOfStudentsKyleJanka\bin\Debug\ArrayOfStudentsKyleJanka.pdb
+C:\Users\Kyle Janka\source\repos\ArrayOfStudentsKyleJanka\obj\Debug\ArrayOfStudentsKyleJanka.csprojAssemblyReference.cache
+C:\Users\Kyle Janka\source\repos\ArrayOfStudentsKyleJanka\obj\Debug\ArrayOfStudentsKyleJanka.Form1.resources
+C:\Users\Kyle Janka\source\repos\ArrayOfStudentsKyleJanka\obj\Debug\ArrayOfStudentsKyleJanka.Properties.Resources.resources
+C:\Users\Kyle Janka\source\repos\ArrayOfStudentsKyleJanka\obj\Debug\ArrayOfStudentsKyleJanka.csproj.GenerateResource.cache
+C:\Users\Kyle Janka\source\repos\ArrayOfStudentsKyleJanka\obj\Debug\ArrayOfStudentsKyleJanka.csproj.CoreCompileInputs.cache
+C:\Users\Kyle Janka\source\repos\ArrayOfStudentsKyleJanka\obj\Debug\ArrayOfStudentsKyleJanka.exe
+C:\Users\Kyle Janka\source\repos\ArrayOfStudentsKyleJanka\obj\Debug\ArrayOfStudentsKyleJanka.pdb
