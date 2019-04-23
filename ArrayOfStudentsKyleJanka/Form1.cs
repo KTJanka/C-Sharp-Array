@@ -17,10 +17,18 @@ namespace ArrayOfStudentsKyleJanka
             InitializeComponent();
         }
 
+        //Author: Kyle Janka    
+        //ID: 565104
+        //Date: 4/23/19
+        //Goal-Purpose of the Program: Display a list of student data from an array and calculate the total.
+
         string[] studentNameArray = new string[5];
         int[] studentGradeArray = new int[5];
-        int arrayNumber;
+        int arrayNumber = 0;
+        int numberOfStudents = 0;
+        int totalGrade = 0;
         const int arrayMax = 5;
+        decimal gradeAvg = 0;
         
 
         private void button1_Click(object sender, EventArgs e)
@@ -59,8 +67,12 @@ namespace ArrayOfStudentsKyleJanka
             {
                 studentNameArray[arrayNumber] = studentNameV;
                 studentGradeArray[arrayNumber] = studentGradeV;
+                totalGrade = totalGrade + studentGradeV;
+                MessageBox.Show("Student added to the list.");
+                numberOfStudents = numberOfStudents + 1;
+                
             }
-
+            arrayNumber++;
 
             //Output
 
@@ -69,30 +81,49 @@ namespace ArrayOfStudentsKyleJanka
         private void ArrayBtn_Click(object sender, EventArgs e)
         {
             string arrayStatement = "";
+            
 
-            for (int i = 0; i < arrayMax; i++)
+            for (int i = 0; i < studentGradeArray.Length; i++)
             {
-                arrayStatement = arrayStatement + "Array [" + i + "] ==> " + "Student # " + (i + 1);
+                arrayStatement = arrayStatement + "Student # " + (i + 1);
                 
                 if (studentGradeArray[i] == 0)
                 {
-                    arrayStatement = arrayStatement + " No student data entered";
+                    arrayStatement = arrayStatement + " (NO STUDENT DATA ENTERED)";
 
                 }
                 else
                 {
                     arrayStatement = arrayStatement + 
-                        "Student # " + studentNameArray[i] + 
-                        "Student grade: " + studentGradeArray[i];
-                    arrayNumber++;
+                        " Name: " + studentNameArray[i] + 
+                        " Grade: " + studentGradeArray[i];
                 }
                 arrayStatement = arrayStatement + "\n";
+                if (numberOfStudents > 0)
+                {
+                    gradeAvg =  totalGrade / numberOfStudents ;
+                }
             }
 
 
             //output
-            arrayLabel.Text = arrayStatement;
+            arrayLabel.Text = arrayStatement  + "Total number of students: " + numberOfStudents + " Student Average Grade " + gradeAvg.ToString("n2");
         }
 
+        private void ClearBtn_Click(object sender, EventArgs e)
+        {
+            arrayLabel.Text = "";
+            studentGradeTxt.Text = "";
+            studentNameTxt.Text = "";
+            studentNameTxt.Focus();
+            Array.Clear(studentNameArray, 0 , studentNameArray.Length);
+            Array.Clear(studentGradeArray, 0, studentGradeArray.Length);
+            arrayNumber = 0;
+            numberOfStudents = 0;
+            totalGrade = 0;
+            gradeAvg = 0;
+            
+
+        }
     }
 }

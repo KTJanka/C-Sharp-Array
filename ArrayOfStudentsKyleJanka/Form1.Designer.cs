@@ -99,6 +99,7 @@
             this.ClearBtn.TabIndex = 7;
             this.ClearBtn.Text = "Clear All";
             this.ClearBtn.UseVisualStyleBackColor = true;
+            this.ClearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
             // 
             // label3
             // 
@@ -115,14 +116,14 @@
             this.arrayLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.arrayLabel.Location = new System.Drawing.Point(28, 333);
             this.arrayLabel.Name = "arrayLabel";
-            this.arrayLabel.Size = new System.Drawing.Size(427, 166);
+            this.arrayLabel.Size = new System.Drawing.Size(430, 166);
             this.arrayLabel.TabIndex = 9;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(546, 584);
+            this.ClientSize = new System.Drawing.Size(676, 584);
             this.Controls.Add(this.arrayLabel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.ClearBtn);
@@ -133,7 +134,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Student Grades";
             this.ResumeLayout(false);
             this.PerformLayout();
 
