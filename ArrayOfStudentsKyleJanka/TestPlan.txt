@@ -1,0 +1,6 @@
+Kyle Janka
+Student Array
+
+With this program I ran into issues with the arrayNumber int not wanting to increase in size or skipping over numbers.
+I realized that I had the array++ in the wrong button, with it being under the display button it cause it to run the loop instantly and skipped right to the max size.
+After moving this to the right section of code the array incremented properly. I checked multiple values and everything worked as intended.
