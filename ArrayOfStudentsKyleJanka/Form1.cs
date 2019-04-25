@@ -70,9 +70,9 @@ namespace ArrayOfStudentsKyleJanka
                 totalGrade = totalGrade + studentGradeV;
                 MessageBox.Show("Student added to the list.");
                 numberOfStudents = numberOfStudents + 1;
-                
+                arrayNumber++;
             }
-            arrayNumber++;
+            
 
             //Output
 
@@ -83,23 +83,23 @@ namespace ArrayOfStudentsKyleJanka
             string arrayStatement = "";
             
 
-            for (int i = 0; i < studentGradeArray.Length; i++)
+            for (int i = 0; i < studentNameArray.Length; i++)
             {
                 arrayStatement = arrayStatement + "Student # " + (i + 1);
-                
-                if (studentGradeArray[i] == 0)
+
+                if (studentNameArray[i] == null)
                 {
                     arrayStatement = arrayStatement + " (NO STUDENT DATA ENTERED)";
 
                 }
-                else
+                else 
                 {
                     arrayStatement = arrayStatement + 
                         " Name: " + studentNameArray[i] + 
                         " Grade: " + studentGradeArray[i];
                 }
                 arrayStatement = arrayStatement + "\n";
-                if (numberOfStudents > 0)
+                if (numberOfStudents >= 0)
                 {
                     gradeAvg =  totalGrade / numberOfStudents ;
                 }
